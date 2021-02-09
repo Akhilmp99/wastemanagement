@@ -3,7 +3,7 @@ mongoose.connect('mongodb://localhost:27017/Waste');
 const Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
-    username : String,
+    email : String,
     password : String,
 });
 

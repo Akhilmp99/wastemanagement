@@ -13,7 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './auth.service';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -37,11 +37,12 @@ import { HttpClient } from '@angular/common/http'
   imports: [
     
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClient,
-    HttpClientModule
+    
+    
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

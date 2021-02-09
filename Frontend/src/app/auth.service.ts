@@ -7,7 +7,7 @@ import { AnyMxRecord } from 'dns'
   providedIn: 'root'
 })
 export class AuthService {
-loginUser(user:AnyMxRecord)
+loginUser(user: AnyMxRecord)
 {
   return this.http.post("http://localhost:4000/login",user)
   .subscribe((data)=>{
